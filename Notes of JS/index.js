@@ -37,3 +37,23 @@ let num4 = parseFloat("34.23"); // will return same as Number() 34.23 - with dec
 
 console.log(num3.toFixed(4)); // it will give value upto 4 decimal places
 */
+
+// Strings Methods
+let html;
+html = "My";
+html = html.concat(" string", " one"); // My string one
+console.log(html);
+console.log(html.length); //13
+console.log(html.toUpperCase());
+console.log(html.toLowerCase());
+console.log(html.indexOf("a")); //gives the first index of given substring else returns -1
+console.log(html.lastIndexOf("str")); //give the last index of given substring else returns -1
+console.log(html.endsWith("ab"));
+console.log(html.substring(1, 4)); //from 1 index to 3 index
+console.log(html.substring(-4)); //it will give entire string except last 4
+//**********************************
+console.log(html.includes("ab"));
+console.log(html.slice(1, 4)); // works same as substring only difference in slicing with negative number
+console.log(html.split(" ")); // converts string in Array
+//**********************************
+console.log(html.replace("this", "id")); //Replaces first occurance fo "this" with "id"
