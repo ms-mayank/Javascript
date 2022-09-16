@@ -38,6 +38,7 @@ let num4 = parseFloat("34.23"); // will return same as Number() 34.23 - with dec
 console.log(num3.toFixed(4)); // it will give value upto 4 decimal places
 */
 
+/*
 // Strings Methods
 let html;
 html = "My";
@@ -57,3 +58,41 @@ console.log(html.slice(1, 4)); // works same as substring only difference in sli
 console.log(html.split(" ")); // converts string in Array
 //**********************************
 console.log(html.replace("this", "id")); //Replaces first occurance fo "this" with "id"
+*/
+
+/*
+// Array and objects
+const arr = [1, 2, "dss", 2.3];
+const arr1 = new Array(1, 23, 4);
+console.log(arr.indexOf(2));
+arr.push("4"); //add at end
+arr.unshift("0"); // add at start
+arr.pop(); //removes from last
+arr.shift(); // removes from start
+// *************************
+arr.splice(1, 2); // .splice(starting index,element count) -Start from index 1 and remove next 2 elements
+//*************************
+arr.reverse(); // it will reverse original array
+let x = arr.concat(arr1);
+**********************
+let arr= [1,2,3,4,5]
+arr.forEach(function (element){
+  console.log(element)
+})// -> forEach() - in array extracts each element from array
+**********************
+*/
+
+/******************************
+let x = 2;
+x++;
+console.log(++x);
+a = ["1, 2, 3", "a", "d"];
+for (i in a) {                // ==> in keyword iterates through item but returns index not item
+  
+  console.log(a[i]);
+}
+arr.forEach(function (element, index, array) {
+  console.log(element, index);
+});
+*****************************
+*/
