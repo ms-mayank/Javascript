@@ -70,7 +70,7 @@ arr.unshift("0"); // add at start
 arr.pop(); //removes from last
 arr.shift(); // removes from start
 // *************************
-arr.splice(1, 2); // .splice(starting index,element count) -Start from index 1 and remove next 2 elements
+arr.splice(1, 2); // Removes element .splice(starting index,element count) -Start from index 1 and remove next 2 elements
 //*************************
 arr.reverse(); // it will reverse original array
 let x = arr.concat(arr1);
@@ -91,6 +91,7 @@ for (i in a) {                // ==> in keyword iterates through item but return
   
   console.log(a[i]);
 }
+for (x of a){} =>extract elements from a
 arr.forEach(function (element, index, array) {
   console.log(element, index);
 });
