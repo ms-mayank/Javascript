@@ -2,7 +2,7 @@
 [JS Array Method] - Higher order function
 
 //forEach
-//filter
+//filter 
 //map
 //sort
 //reduce

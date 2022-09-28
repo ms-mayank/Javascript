@@ -92,6 +92,9 @@ let arr= [1,2,3,4,5]
 arr.forEach(function (element){
   console.log(element)
 })// -> forEach() - in array extracts each element from array
+
+const points = [40, 100, 1, 5, 25, 10];
+points.sort(function(a, b){return a - b});
 **********************
 
 let x = 2;
