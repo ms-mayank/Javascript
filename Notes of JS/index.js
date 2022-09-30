@@ -1,5 +1,15 @@
 console.log("ok");
 /*
+function example(parameter) {
+  console.log(parameter); // Output = foo
+}
+
+const argument = "foo";
+
+example(argument);
+
+**[1]**
+
 // Rest and Spread
 // Array REST
 function rest(a, b, c, ...other) {
@@ -175,5 +185,38 @@ person1.apply(userDetail1, ["v1", "v2"]);
 //Bind - Create a copy of function and use it that
 let newbind = person.bind(userDetail);
 newbind();
+---------------------------------------------------------------
+**[5]**
+-> Higher order function.js
+---------------------------------------------------------------
+**[6]*****
+undefined - Variable create but no value assigned
+Not defined - Variable not created but trying to access it.
+(obj!==undefined || obj!==null)?obj.name:"";
+---------------------------------------------------------------
+**[7]**
+Prototype - Every object in JavaScript has a built-in property, which is called its prototype. 
+const obj = {
+  name: "mayank",
+  roll: 12,
+  getName: function () {
+    return this.name;
+  },
+};
+const obj1 = {
+  name: "shukla",
+  __proto__: obj,
+};
+console.log(obj1.getName()); // getName function accessible with obj1 using __proto__ value
+---------------------------------------------------------------
+**[8]**
+Map: stores unique key value pair just like object, but with object we can not use forEach and other iterable function but with Map we can 
+const map1 = new Map();
+map1.set('a', 1);
+map1.set('b', 2);
+map1.set('c', 3);
+console.log(map1.get('a'));
+
+weakSet, weakMap = only accept object and does not allows iteration, many functions will not be available in prototype
 
 */
